@@ -1,0 +1,66 @@
+.upper-header{
+    background-color: #FF616D;
+    padding: 30px 0;
+    text-align: center;
+}
+.upper-header h1, .upper-header p{
+    margin: 0;
+    color: #FFEAC9;
+}
+.upper-header h1{
+    font-size: 3.5rem;
+}
+.upper-header p{
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+}
+.nav{
+    margin: 0;
+    padding: 10px 50px;
+    background-color: #D83A56;
+    color: white;
+    z-index: 100;
+}
+.brand-name{
+    font-size: 2rem;
+    color: rgb(54, 54, 54);
+}
+.brand-name:hover{
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
+.link{
+    font-size: 1.2rem;
+    /* color: rgb(255, 255, 255); */
+    transition: .3s;
+}
+.link:hover{
+    text-decoration: none;
+    transform: translateY(-2px);
+    /* color: rgb(238, 238, 238); */
+}
+.menu-btn{
+    font-size: 1.2rem;
+    /* background-color: #FFEAC9;
+    border: none;
+    color: #D83A56; */
+}
+/* .menu-btn:hover{
+    background-color: #FF616D;
+    color: #D83A56;
+}
+.menu-btn:active{
+    background-color: #FF616D;
+    color: #D83A56;
+    border: none;
+}
+.menu-btn:focus{
+    background-color: #FF616D;
+    color: #D83A56;
+    border: none;
+}
+.menu-btn:visited{
+    background-color: #FF616D;
+    color: #D83A56;
+    border: none;
+} */
