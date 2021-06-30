@@ -9,7 +9,7 @@ import Cake from '../Cake/Cake';
 const Home = () => {
     const [cakes, setCakes] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/cakes')
+        fetch('https://immense-everglades-95865.herokuapp.com/cakes')
             .then(res => res.json())
             .then(data => setCakes(data))
     }, [])

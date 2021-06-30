@@ -12,7 +12,7 @@ const CakesTable = ({ cakeData }) => {
 
 
     useEffect(() => {
-        fetch('http://localhost:4000/cakes')
+        fetch('https://immense-everglades-95865.herokuapp.com/cakes')
             .then(res => res.json())
             .then(data => setCakes(data))
     }, [fetchDependency, cakeData])
@@ -26,7 +26,7 @@ const CakesTable = ({ cakeData }) => {
     const handleDeleteCake = (id) => {
         const sureToDelete = window.confirm("Are you sure you want to delete?");
         if (sureToDelete) {
-            fetch('http://localhost:4000/deleteCake', {
+            fetch('https://immense-everglades-95865.herokuapp.com/deleteCake', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ id })

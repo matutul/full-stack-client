@@ -13,7 +13,7 @@ const Orders = () => {
     const [errorMessage, setErrorMessage] = useState('');
     useEffect(() => {
         if (loggedInUser.email) {
-            fetch('http://localhost:4000/orders', {
+            fetch('https://immense-everglades-95865.herokuapp.com/orders', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email: loggedInUser.email })

@@ -37,7 +37,7 @@ const Admin = () => {
     }
 
     const handleAddCake = () => {
-        fetch('http://localhost:4000/addCake', {
+        fetch('https://immense-everglades-95865.herokuapp.com/addCake', {
             method: "POST",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(cakeData)

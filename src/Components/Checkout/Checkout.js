@@ -12,7 +12,7 @@ const Checkout = (props) => {
     const [order, setOrder] = useState({});
     const { id } = useParams();
     useEffect(() => {
-        fetch(`http://localhost:4000/cake/${id}`)
+        fetch(`https://immense-everglades-95865.herokuapp.com/cake/${id}`)
             .then(res => res.json())
             .then(data => {
                 const price = parseFloat(data.price);
@@ -28,7 +28,7 @@ const Checkout = (props) => {
             })
     }, [id])
     const handlePlaceOrder = () => {
-        fetch('http://localhost:4000/placeOrder', {
+        fetch('https://immense-everglades-95865.herokuapp.com/placeOrder', {
             method: 'POST',
             headers: { "content-type": "application/json" },
             body: JSON.stringify(order)
