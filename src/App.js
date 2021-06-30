@@ -21,10 +21,10 @@ export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({
-    displayName: 'Ashrafujjaman Tutul',
-    email: 'ashrafujjamantutul@gmail.com',
+    displayName: '',
+    email: '',
     photoURL: '',
-    phone: '01941071009'
+    phone: ''
   });
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
